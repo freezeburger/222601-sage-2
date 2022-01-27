@@ -5,3 +5,4 @@
 * Promise
 * Callback
 * Qu'est ce que ...
+* Class ou Fonction ?

@@ -1,23 +1,23 @@
 
-import {BobComponent } from './theory/higher-order';
-
 import { ViewLogin } from "./components/views";
-
+import { MyFunctionnalComponent } from "./theory/functional-component";
 
 
 const env = process.env;
 
 console.groupCollapsed('Environnement Variables');
-  console.table(env);
-  console.log(env);
+console.table(env);
+console.log(env);
 console.groupEnd();
 
 
 function App() {
   return (
     <div className="App">
-       <BobComponent label="12346"></BobComponent>
-        <ViewLogin></ViewLogin>
+
+      <MyFunctionnalComponent />
+
+      <ViewLogin></ViewLogin>
     </div>
   );
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { ActionTypes, store } from '../../../logic';
-
+/* 
 console.groupCollapsed('Data From Store')
 
-/* console.log(store);
+console.log(store);
 console.log( store.getState() );
 
 store.dispatch({type:ActionTypes.TIME_UPDATE})
