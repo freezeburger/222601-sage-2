@@ -4,21 +4,26 @@ import { ActionTypes, store } from "../logic"
 
 export const MyFunctionnalComponent = props => {
 
-    const [ render, setRender ] = React.useState({});
     const inputRef = React.useRef();
-
     const setIntervalOnMount = () => {
 
         const timerId = setInterval( () => {
             let time = Date.now();
             inputRef.current.value = time;
         } ,1000);
-        
+
         // cleanup function
         const clearIntervalOnUnmount = () => clearInterval(timerId);
         return clearIntervalOnUnmount;
     }
     React.useEffect(  setIntervalOnMount );
+    
+    const [ render, setRender ] = React.useState({});
+    React.useEffect( ()=>{
+        const unsubscribe = store.subscribe( () => setRender({}) )
+        return unsubscribe;
+    })
+
 
     return (
         <form>

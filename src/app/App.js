@@ -1,7 +1,6 @@
 
 import { ViewLogin } from "./components/views";
-import { MyFunctionnalComponent } from "./theory/functional-component";
-
+import { MyBetterFunctionnalComponent } from "./theory/better-functional-component";
 
 const env = process.env;
 
@@ -14,9 +13,6 @@ console.groupEnd();
 function App() {
   return (
     <div className="App">
-
-      <MyFunctionnalComponent />
-
       <ViewLogin></ViewLogin>
     </div>
   );

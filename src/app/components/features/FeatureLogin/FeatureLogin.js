@@ -1,37 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ActionTypes, store } from '../../../logic';
-/* 
-console.groupCollapsed('Data From Store')
-
-console.log(store);
-console.log( store.getState() );
-
-store.dispatch({type:ActionTypes.TIME_UPDATE})
-console.log( store.getState() );
-
-console.groupEnd() */
+import { ActionTypes, useStore } from '../../../logic';
 
 
 const FeatureLogin = () => {
 
-  const [time, setTime] = React.useState(store.getState().time);
-
-  const handleClick = () => {
-    store.dispatch({ type: ActionTypes.TIME_UPDATE });
-    setTime(store.getState().time)
-  }
-
+  const [ state, dispatch] = useStore();
+  const handleClick = () => dispatch({ type: ActionTypes.TIME_UPDATE });
+  
   return (
     <div data-testid="FeatureLogin">
-
       FeatureLogin Component
       <br />
-      <code>{time}</code>
+      <code>{state.time}</code>
       <br />
       <button onClick={handleClick}>Update Time</button>
-
     </div>
   );
 

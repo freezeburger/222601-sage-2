@@ -1,8 +1,9 @@
 * Différence import default nommé
-* Différence class function
-* Arrow Function
+
+* ✔️ Arrow Function
 * Modules
-* Promise
-* Callback
-* Qu'est ce que ...
+* (Laurent) Promise , Callback
+* ✔️  Qu'est ce que ...
+
+* Différence class function
 * Class ou Fonction ?
