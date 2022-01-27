@@ -1,0 +1,36 @@
+{
+  "usesTypeScript": false,
+  "usesCssModule": false,
+  "cssPreprocessor": "css",
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "src/app/components/base",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": true,
+      "withLazy": false
+    },
+    "feature": {
+      "path": "src/app/components/features",
+      "withStyle": false,
+      "withTest": true,
+      "withStory": true,
+      "withLazy": true
+    },
+    "layout": {
+      "path": "src/app/components/layouts",
+      "withStyle": true,
+      "withTest": false,
+      "withStory": true,
+      "withLazy": false
+    },
+    "view": {
+      "path": "src/app/components/views",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": true,
+      "withLazy": false
+    }
+  }
+}

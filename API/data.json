@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+            "id":1,
+            "username":"Sage"
+        },
+        {
+            "id":2,
+            "username":"Orsys"
+        }
+    ],
+    "messages":[
+        {
+            "id":1,
+            "userId":1,
+            "content":"Hello React"
+        },
+        {
+            "id":2,
+            "userId":2,
+            "content":"Welcome !"
+        }
+    ]
+}
