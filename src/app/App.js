@@ -1,4 +1,9 @@
+
+import {BobComponent } from './theory/higher-order';
+
 import { ViewLogin } from "./components/views";
+
+
 
 const env = process.env;
 
@@ -11,6 +16,7 @@ console.groupEnd();
 function App() {
   return (
     <div className="App">
+       <BobComponent label="12346"></BobComponent>
         <ViewLogin></ViewLogin>
     </div>
   );
